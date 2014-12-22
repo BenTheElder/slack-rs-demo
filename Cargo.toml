@@ -22,7 +22,7 @@ license = "Apache-2.0"
 
 
 [dependencies.slack]
-git = "https://github.com/BenTheElder/slack-rs.git"
+slack = "0.1.0"
 
 [[bin]]
 name = "slack-demo"
