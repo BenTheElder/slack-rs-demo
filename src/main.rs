@@ -40,7 +40,7 @@ impl slack::MessageHandler for MyHandler {
 fn main(){
 	let args = std::os::args();
 	let api_key = match args.capacity() {
-		0 | 1 => panic!("No api-key in args! Usage: ./edwin <api-key>"),
+		0 | 1 => panic!("No api-key in args! Usage: ./slack-demo <api-key>"),
 		x => {
 			let i = x-1;
 			args.index(&i)
