@@ -1,8 +1,8 @@
 [root]
 name = "slack-demo"
-version = "0.1.0"
+version = "0.1.2"
 dependencies = [
- "slack 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "slack 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -111,7 +111,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "slack"
-version = "0.1.1"
+version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "hyper 0.0.17 (registry+https://github.com/rust-lang/crates.io-index)",
