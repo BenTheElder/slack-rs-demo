@@ -18,7 +18,7 @@ extern crate time;
 
 
 struct MyHandler {
-	count : int
+	count : i64
 }
 
 #[allow(unused_variables)]
@@ -43,7 +43,7 @@ fn main(){
 		0 | 1 => panic!("No api-key in args! Usage: ./slack-demo <api-key>"),
 		x => {
 			let i = x-1;
-			args.index(&i)
+			args[i].clone()
 		}
 	};
 	let mut handler = MyHandler{count: 0};
@@ -51,7 +51,7 @@ fn main(){
 	let r = cli.login_and_run::<MyHandler>(&mut handler, api_key.as_slice());
 	match r {
 		Ok(_) => {},
-		Err(err) => println!("Error: {}", err)
+		Err(err) => println!("{}", err)
 	}
 	println!("{}", cli.get_name());
 	println!("{}", cli.get_team().get_name());
