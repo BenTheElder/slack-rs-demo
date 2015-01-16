@@ -1,8 +1,8 @@
 [root]
 name = "slack-demo"
-version = "0.2.1"
+version = "0.2.4"
 dependencies = [
- "slack 0.2.1 (git+https://github.com/BenTheElder/slack-rs.git)",
+ "slack 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -116,12 +116,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "slack"
-version = "0.2.1"
-source = "git+https://github.com/BenTheElder/slack-rs.git#fdb1192949b8628f5d372a8c665d306a9d09a7e6"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "hyper 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "rustc-serialize 0.2.8 (registry+https://github.com/rust-lang/crates.io-index)",
- "websocket 0.9.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "websocket 0.9.7 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -153,7 +153,7 @@ dependencies = [
 
 [[package]]
 name = "websocket"
-version = "0.9.6"
+version = "0.9.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "hyper 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
